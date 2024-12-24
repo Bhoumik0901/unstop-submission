@@ -11,7 +11,7 @@ interface InputType {
 }
 const Input = forwardRef<HTMLInputElement, InputType>(({ type, imgSrc, text,  error }, ref) => {
     return (
-        <div className='flex p-2 mx-4 rounded-lg ' style={{ backgroundColor: '#F4F4F4' }}>
+        <div className='flex p-2 mx-4 rounded-lg  ' style={{ backgroundColor: '#F4F4F4' }}>
             <div className='flex justify-center px-3'>
                 <img src={imgSrc} alt="" />
             </div>
