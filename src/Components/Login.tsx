@@ -54,13 +54,13 @@ const Login = () => {
       
 
     return (
-        <div className="bg-slate-200 p-20 rounded-lg w-full flex justify-center h-full  items-center">
+        <div className="bg-slate-200 sm:p-20 rounded-lg w-full flex justify-center h-full  items-center">
             <div className="h-[700px] w-full overflow-hidden bg-slate-100 grid grid-cols-1 lg:grid-cols-2 place-content-center">
                 <div className=" hidden lg:flex justify-center items-center ">
                     <img src={loginImage} alt="" className="w-[500px] h-[500px]" />
                 </div>
                 <div className="h-[100%]   flex justify-center items-center" style={{width:'inherit'}}>
-                    <div className="bg-white  h-[100%] w-screen lg:w-full m-10 rounded-lg">
+                    <div className="bg-white  h-[100%] w-screen lg:w-full sm:m-10 rounded-lg">
                         <div className="p-2 font-semibold text-xl">
                             Welcome to <br />
                             <span className="font-extrabold text-3xl text-purple-600">UNSTOP</span>

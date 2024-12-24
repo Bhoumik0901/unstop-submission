@@ -1,6 +1,5 @@
-import { forwardRef, useState } from "react";
-import closeEye from '../assets/eye.png'
-import openEye from '../assets/password.svg'
+import { forwardRef} from "react";
+
 interface InputType {
     type: string;
     imgSrc: string;
@@ -10,9 +9,7 @@ interface InputType {
     error?: string
 
 }
-const Input = forwardRef<HTMLInputElement, InputType>(({ type, imgSrc, text, hidden,  error }, ref) => {
-    const [isPassVisible, setPassVisible] = useState<boolean>(false);
-    type = type === 'password' && isPassVisible ? 'text' : type;
+const Input = forwardRef<HTMLInputElement, InputType>(({ type, imgSrc, text,  error }, ref) => {
     return (
         <div className='flex p-2 mx-4 rounded-lg ' style={{ backgroundColor: '#F4F4F4' }}>
             <div className='flex justify-center px-3'>
@@ -28,13 +25,7 @@ const Input = forwardRef<HTMLInputElement, InputType>(({ type, imgSrc, text, hid
                 </div>
                 <input type={type} className='flex-grow bg-transparent outline-none' placeholder={text} ref={ref} />
             </div>
-            {hidden &&
-                <div className='flex justify-center px-3 items-center' onClick={() => {
-                    setPassVisible((prev) => !prev)
-                }}>
-                    {!isPassVisible ? <img src={openEye} alt="" className="" /> : <img src={closeEye} alt="" className="h-[1.7rem] w-[1.7rem]" />}
-                </div>
-            }
+            
 
 
 

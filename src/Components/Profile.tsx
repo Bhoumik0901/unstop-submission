@@ -17,7 +17,7 @@ const Profile = () => {
     }
     const logout=()=>{
         localStorage.removeItem('user');
-        navigate('/');
+        navigate('/login');
     }
     return (
         <div className="flex h-full w-full justify-center items-center flex-col gap-20 ">
