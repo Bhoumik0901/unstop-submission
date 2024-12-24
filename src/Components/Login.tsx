@@ -46,7 +46,7 @@ const Login = () => {
         // Submit form if valid
         try {
           await fetchData({ email: emailValue, username: usernameValue, password: passValue });
-          navigate('/profile');
+          navigate('/home');
         } catch (error) {
           console.error('Error during submission:', error);
         }
